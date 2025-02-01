@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oprema</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Oprema</h1>
+
+    <form id="equipmentForm">
+      <div class="form-group">
+        <label for="name">Naziv opreme:</label>
+        <input type="text" id="name" required />
+      </div>
+
+      <div class="form-group">
+        <label for="price">Cijena:</label>
+        <input type="number" id="price" min="0" step="0.01" required />
+      </div>
+
+      <div class="form-group">
+        <label for="status">Status:</label>
+        <select id="status" required>
+          <option value="available">Dostupno</option>
+          <option value="unavailable">Nedostupno</option>
+        </select>
+      </div>
+
+      <button type="submit">Dodaj</button>
+    </form>
+
+    <div id="statusRatio"></div>
+    <div id="equipmentList"></div>
+
+    <script src="zad8.js"></script>
+  </body>
+</html>
