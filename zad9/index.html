@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filtriranje i sortiranje imena gradova</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Filtriranje i sortiranje imena gradova</h1>
+
+    <div class="input-group">
+      <p>Unos naziva gradova (jedan po linji):</p>
+      <textarea id="cityInput"></textarea>
+    </div>
+
+    <button onclick="processCities()">Spremi</button>
+    <button onclick="saveToFile()">Spremi kao CSV</button>
+
+    <div class="results">
+      <h3>Filtrirani gradovi s nazivom duljim od 5 slova</h3>
+      <div id="filteredCities"></div>
+    </div>
+
+    <script src="zad9.js"></script>
+  </body>
+</html>
