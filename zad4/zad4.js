@@ -56,7 +56,7 @@ function analyzePlants() {
     .sort((a, b) => a.color.localeCompare(b.color));
 
   console.log("Analiza biljki prema bojama");
-  console.log("----------------------");
+  console.log("-".repeat(50));
 
   sortedColors.forEach((colorData) => {
     console.log(`Boja: ${colorData.color}`);
@@ -72,7 +72,7 @@ function analyzePlants() {
     .slice(0, 3);
 
   console.log("\nTri boje s najvećim kalorijskim doprinosom:");
-  console.log("-----------------------------------");
+  console.log("-".repeat(50));
   topColors.forEach((colorData, index) => {
     console.log(
       `${index + 1}. ${colorData.color}: ${colorData.totalCalories} kalorije`

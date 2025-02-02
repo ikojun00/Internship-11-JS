@@ -65,13 +65,13 @@ function analyzeIndustryData() {
     .sort((a, b) => b.averageSalary - a.averageSalary);
 
   console.log("Industrije s najmanje dva zaposlenika");
-  console.log("------------------------------------------------");
+  console.log("-".repeat(50));
 
   filteredStats.forEach((stat) => {
     console.log(`Industrija: ${stat.industry}`);
     console.log(`Prosječna plaća: $${stat.averageSalary.toFixed(2)}`);
     console.log(`Broj zaposlenika: ${stat.employeeCount}`);
-    console.log("------------------------------------------------");
+    console.log("-".repeat(50));
   });
 }
 

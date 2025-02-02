@@ -68,7 +68,7 @@ function analyzeSectorSalaries() {
     );
 
   console.log("Analiza plaća po sektorima");
-  console.log("--------------------");
+  console.log("-".repeat(50));
 
   sortedSectors.forEach((sectorData) => {
     console.log(`Sektor: ${sectorData.sector}`);
@@ -83,12 +83,12 @@ function analyzeSectorSalaries() {
       const employeeContributionPercentage =
         (emp.salary / sectorData.totalSectorSalary) * 100;
       console.log(
-        `- ${emp.lastName}, ${emp.firstName}: $${emp.salary.toFixed(
+        `- ${emp.lastName}, ${emp.firstName}: ${emp.salary.toFixed(
           2
-        )} (${employeeContributionPercentage.toFixed(2)}% sektora)`
+        )}€ (${employeeContributionPercentage.toFixed(2)}% sektora)`
       );
     });
-    console.log("--------------------");
+    console.log("-".repeat(50));
   });
 }
 

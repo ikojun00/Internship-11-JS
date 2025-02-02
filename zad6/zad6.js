@@ -60,7 +60,7 @@ function analyzeEquipment() {
 
   console.log("Popis dostupne opreme:");
   availableEquipment.forEach((item) => {
-    console.log(`${item.name}: $${item.price.toFixed(2)}`);
+    console.log(`${item.name}: ${item.price.toFixed(2)}€`);
   });
 
   const unavailablePercentage = (unavailableValue / totalValue) * 100;
@@ -94,7 +94,7 @@ function analyzeEquipment() {
     );
     if (data.items.length > 0) {
       data.items.forEach((item) => {
-        console.log(`- ${item.name}: $${item.price.toFixed(2)}`);
+        console.log(`- ${item.name}: ${item.price.toFixed(2)}€`);
       });
     } else {
       console.log("Nema opreme u cjenovnom rangu.");

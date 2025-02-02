@@ -36,25 +36,25 @@ function analyzeStudentResults() {
   }
 
   const categories = {
-    "Category 1 (0-25%)": {
+    "(0-25%)": {
       students: [],
       totalScore: 0,
       minScore: 0,
       maxScore: maxScore * 0.25,
     },
-    "Category 2 (25-50%)": {
+    "(25-50%)": {
       students: [],
       totalScore: 0,
       minScore: maxScore * 0.25,
       maxScore: maxScore * 0.5,
     },
-    "Category 3 (50-75%)": {
+    "(50-75%)": {
       students: [],
       totalScore: 0,
       minScore: maxScore * 0.5,
       maxScore: maxScore * 0.75,
     },
-    "Category 4 (75-100%)": {
+    "(75-100%)": {
       students: [],
       totalScore: 0,
       minScore: maxScore * 0.75,
@@ -73,7 +73,7 @@ function analyzeStudentResults() {
   });
 
   console.log("Grupiranje studenata po rezultatima testova");
-  console.log("--------------------------");
+  console.log("-".repeat(50));
 
   Object.entries(categories).forEach(([category, data]) => {
     if (data.students.length > 0) {
